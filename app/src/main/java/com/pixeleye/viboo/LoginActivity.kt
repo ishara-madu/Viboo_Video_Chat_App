@@ -1,6 +1,7 @@
 package com.pixeleye.viboo
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -8,17 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatCheckBox
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.credentials.CredentialManager
-import androidx.credentials.CustomCredential
-import androidx.credentials.GetCredentialRequest
-import androidx.credentials.GetCredentialResponse
 import androidx.lifecycle.lifecycleScope
-import com.google.android.libraries.identity.googleid.GetSignInWithGoogleOption
-import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
-import com.google.android.libraries.identity.googleid.GoogleIdTokenParsingException
 import com.google.android.material.button.MaterialButton
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
@@ -43,18 +35,11 @@ class LoginActivity : AppCompatActivity() {
             facebookButton.isEnabled = isChecked
             googleButton.isEnabled = isChecked
         }
+        googleSignInClient = GoogleSignInClient(this)
 
         googleButton.setOnClickListener {
-            googleSignInClient = GoogleSignInClient(this)
-
-            // Check if user is already signed in
-            if (googleSignInClient.isSignedIn()) {
-                println("User is already signed in")
-                Toast.makeText(activityContext, "User is already signed in", Toast.LENGTH_SHORT).show()
-            } else {
-                // Launch sign-in process
-                signInWithGoogle()
-            }
+            // Launch sign-in process
+            signInWithGoogle()
         }
 
     }
@@ -65,6 +50,8 @@ class LoginActivity : AppCompatActivity() {
             if (isSignedIn) {
                 println("Sign-in successful!")
                 Toast.makeText(activityContext, "Sign-in successful!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(activityContext, MainActivity::class.java)
+                startActivity(intent)
             } else {
                 println("Sign-in failed.")
                 Toast.makeText(activityContext, "Sign-in failed.", Toast.LENGTH_SHORT).show()
