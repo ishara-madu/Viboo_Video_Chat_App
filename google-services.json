@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "128854412755",
+    "project_id": "viboo-16cd6",
+    "storage_bucket": "viboo-16cd6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128854412755:android:807e72b3d0e667cfea3326",
+        "android_client_info": {
+          "package_name": "com.pixeleye.viboo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_s0tDYX6oxZj5hy8JvpknzbrtayOPjto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
