@@ -1,18 +1,17 @@
 package com.pixeleye.viboo
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.pixeleye.viboo.databinding.ActivityMainBinding
+import com.pixeleye.viboo.databinding.ActivitySettingsBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+class SettingsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySettingsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySettingsBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
@@ -21,9 +20,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.settingsButton.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
         }
+
     }
 }

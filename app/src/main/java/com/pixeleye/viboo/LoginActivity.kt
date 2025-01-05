@@ -52,6 +52,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(activityContext, "Sign-in successful!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(activityContext, MainActivity::class.java)
                 startActivity(intent)
+                finish()
             } else {
                 println("Sign-in failed.")
                 Toast.makeText(activityContext, "Sign-in failed.", Toast.LENGTH_SHORT).show()
