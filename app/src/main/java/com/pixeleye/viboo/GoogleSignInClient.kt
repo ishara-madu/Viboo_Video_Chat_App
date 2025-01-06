@@ -101,4 +101,11 @@ class GoogleSignInClient(
         firebaseAuth.signOut()
     }
 
+    suspend fun deleteProfile() {
+        credentialManager.clearCredentialState(
+            ClearCredentialStateRequest()
+        )
+        firebaseAuth.currentUser?.delete()
+    }
+
 }

@@ -104,7 +104,7 @@
             android:clickable="true"
             android:textStyle="bold"
             android:textColor="@color/facebook_blue"
-            android:text="Terms and Conditions."
+            android:text="Terms and Conditions"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

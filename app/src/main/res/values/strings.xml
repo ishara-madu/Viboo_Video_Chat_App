@@ -1,93 +1,146 @@
 <resources>
     <string name="app_name">Viboo</string>
-    <string name="web_client">128854412755-nkv2k4827hhcph65nmt7cdc7vtik8q2e.apps.googleusercontent.com</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
+    <string name="community_guidelines">
+    <![CDATA[
+    <b><font color="#4CAF50"><big>Viboo Community Code</big></font></b><br><br>
+    <font color="#333333" style="font-family: Arial, sans-serif; font-size: 16sp; line-height: 1.6;">
+        Welcome to Viboo, a platform designed to connect people through video chats.
+        To maintain a safe and enjoyable experience for all users, we ask that you follow our community guidelines.<br><br>
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
+    <b><font color="#2196F3">1. Age Requirement</font></b><br>
+    <font color="#333333">
+        Users must be 18 years or older to use Viboo.
+        Accounts found violating this rule will be permanently suspended.<br><br>
 
-        "Bold, graphic, intentional.\n\n"
+    <b><font color="#2196F3">2. Respectful Behavior</font></b><br>
+    <font color="#333333">
+        Treat others with kindness and respect during video chats.
+        Bullying, harassment, hate speech, discrimination, and explicit content are strictly prohibited.<br><br>
 
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
+    <b><font color="#2196F3">3. No Nudity or Sexual Content</font></b><br>
+    <font color="#333333">
+        Nudity, sexual acts, or sexually suggestive behavior are not allowed.
+        Accounts engaging in such activities will be banned immediately.<br><br>
 
-        "Motion provides meaning.\n\n"
+    <b><font color="#2196F3">4. No Illegal Activities</font></b><br>
+    <font color="#333333">
+        Illegal behavior, violence, or promoting illegal content is not allowed.
+        This includes the use of drugs, weapons, or any activity that can cause harm.<br><br>
 
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+    <b><font color="#2196F3">5. Protect Your Privacy</font></b><br>
+    <font color="#333333">
+        Do not share personal information, such as phone numbers, addresses, or financial details,
+        during video chats.<br><br>
 
-        "3D world.\n\n"
+    <b><font color="#2196F3">6. No Spam or Scams</font></b><br>
+    <font color="#333333">
+        Spamming or advertising of any kind is strictly prohibited.
+        Users found engaging in scams or fraudulent activity will be banned.<br><br>
 
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
+    <b><font color="#2196F3">7. Reporting Violations</font></b><br>
+    <font color="#333333">
+        Use the Report button to report any inappropriate behavior.
+        Our moderation team will review all reports and take appropriate action.<br><br>
 
-        "Light and shadow.\n\n"
+    <b><font color="#FF5722">Consequences for Violations</font></b><br>
+    <font color="#333333">
+        Breaking any of the above rules may result in temporary suspension or permanent ban of your account.
+    </font>
+    ]]>
+</string>
+    <string name="terms_of_service">
+    <![CDATA[
+    <b><font color="#4CAF50"><big>Viboo Terms of Use</big></font></b><br><br>
+    <font color="#333333" style="font-family: Arial, sans-serif; font-size: 16sp; line-height: 1.6;">
+        <b><font color="#2196F3">Effective Date:</font></b> January 5, 2025<br><br>
 
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+        Welcome to Viboo! By using our app, you agree to comply with the following terms and conditions. Please read them carefully before signing up.<br><br>
 
-        "Resting elevation.\n\n"
+        <b><font color="#2196F3">1. Eligibility</font></b><br>
+        <font color="#333333">You must be 18 years or older to create an account on Viboo.
+        By signing up, you confirm that you meet the age requirement.<br><br>
 
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
+        <b><font color="#2196F3">2. User Responsibilities</font></b><br>
+        <font color="#333333">You are responsible for all activity on your account.
+        You agree to use the app for legal purposes and to comply with all applicable laws.<br><br>
 
-        "Component elevations.\n\n"
+        <b><font color="#2196F3">3. Account Termination</font></b><br>
+        <font color="#333333">Viboo reserves the right to suspend or terminate your account if you violate our terms or guidelines.<br><br>
 
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+        <b><font color="#2196F3">4. Paid Plans and Ads</font></b><br>
+        <font color="#333333">Viboo offers a premium subscription plan to remove ads.
+        By subscribing, you agree to our payment policies and auto-renewal terms.<br><br>
 
-        "Responsive elevation and dynamic elevation offsets.\n\n"
+        <b><font color="#2196F3">5. Privacy and Data Collection</font></b><br>
+        <font color="#333333">By using Viboo, you agree to our Privacy Policy regarding the collection and use of your data.<br><br>
 
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
+        <b><font color="#2196F3">6. Limitation of Liability</font></b><br>
+        <font color="#333333">Viboo is not responsible for any offensive or inappropriate content shared by users.
+        We strive to moderate the platform but cannot guarantee a completely safe experience.<br><br>
 
-        "Avoiding elevation interference.\n\n"
+        <b><font color="#2196F3">7. Changes to Terms</font></b><br>
+        <font color="#333333">We may update these terms from time to time.
+        Continued use of the app after changes means you accept the updated terms.<br><br>
+    </font>
+    ]]>
+</string>
+    <string name="privacy_policy">
+    <![CDATA[
+    <b><font color="#4CAF50"><big>Viboo Privacy Notice</big></font></b><br><br>
+    <font color="#333333" style="font-family: Arial, sans-serif; font-size: 16sp; line-height: 1.6;">
+        <b><font color="#2196F3">Effective Date:</font></b> January 5, 2025<br><br>
 
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
+        At Viboo, we are committed to protecting your privacy and ensuring that your data is handled securely.<br><br>
+
+        <b><font color="#2196F3">1. Information We Collect</font></b><br>
+        <font color="#333333">
+            <b>Account Information:</b> Username, email address, and date of birth.<br>
+            <b>Usage Data:</b> How you interact with the app, including video chat duration, ads viewed, and interactions.<br>
+            <b>Device Information:</b> Device type, operating system, and IP address.<br><br>
+        </font>
+
+        <b><font color="#2196F3">2. How We Use Your Information</font></b><br>
+        <font color="#333333">
+            To provide and improve our services.<br>
+            To display personalized ads unless you have subscribed to the ad-free plan.<br>
+            To moderate content and ensure the safety of our users.<br><br>
+        </font>
+
+        <b><font color="#2196F3">3. Sharing Your Information</font></b><br>
+        <font color="#333333">
+            We do not share your personal information with third parties, except:<br><br>
+            <font color="#333333">
+                <b>To comply with legal obligations.</b><br>
+                <b>To prevent fraud or illegal activities.</b><br><br>
+            </font>
+        </font>
+
+        <b><font color="#2196F3">4. Your Rights</font></b><br>
+        <font color="#333333">
+            You have the right to access, modify, or delete your personal data. 
+            You can request to delete your account at any time by contacting our support team.<br><br>
+        </font>
+
+        <b><font color="#2196F3">5. Data Security</font></b><br>
+        <font color="#333333">
+            We take reasonable measures to protect your data from unauthorized access. 
+            However, no method of transmission over the Internet is 100% secure.<br><br>
+        </font>
+
+        <b><font color="#2196F3">6. Cookies and Tracking</font></b><br>
+        <font color="#333333">
+            Viboo uses cookies to enhance your experience and provide personalized ads. 
+            You can manage your cookie preferences in your device settings.<br><br>
+        </font>
+
+        <b><font color="#2196F3">7. Changes to Privacy Policy</font></b><br>
+        <font color="#333333">
+            We may update this policy from time to time. 
+            Continued use of Viboo after changes means you accept the updated policy.<br><br>
+        </font>
+    </font>
+    ]]>
+</string>
+
+
 </resources>

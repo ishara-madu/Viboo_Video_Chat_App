@@ -3,6 +3,7 @@ package com.pixeleye.viboo
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,10 +27,10 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val facebookButton = findViewById<MaterialButton>(R.id.facebookButton)
         val googleButton = findViewById<MaterialButton>(R.id.googleButton)
         val userAgreement = findViewById<AppCompatCheckBox>(R.id.userAgreementCheckBox)
+        val termsAndConditions = findViewById<TextView>(R.id.terms)
 
         userAgreement.setOnCheckedChangeListener { _, isChecked ->
             facebookButton.isEnabled = isChecked
@@ -40,6 +41,13 @@ class LoginActivity : AppCompatActivity() {
         googleButton.setOnClickListener {
             // Launch sign-in process
             signInWithGoogle()
+        }
+
+        termsAndConditions.setOnClickListener {
+            val intent = Intent(this, DocumentsActivity::class.java)
+            intent.putExtra("id", 2)
+            intent.putExtra("title", termsAndConditions.text)
+            startActivity(intent)
         }
 
     }
@@ -60,11 +68,6 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun signOutFromGoogle() {
-        lifecycleScope.launch {
-            googleSignInClient.signOut()
-            println("Signed out successfully.")
-        }
-    }
+
 
 }
