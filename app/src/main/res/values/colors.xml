@@ -7,5 +7,6 @@
     <color name="facebook_blue">#376CE7</color>
     <color name="premium_yellow">#FFC107</color>
     <color name="holo_white">#EDEDED</color>
+    <color name="holo_white_dark">#CECECE</color>
 
 </resources>

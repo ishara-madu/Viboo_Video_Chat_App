@@ -9,6 +9,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.pixeleye.viboo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private var lookingTitle:String? = null
+    private var locationTitle:String? = null
     private lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +23,32 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        lookingTitle = getFromMap("lookingTitle")
+        locationTitle = getFromMap("locationTitle")
+
+        if (lookingTitle != null){
+        binding.lookingButton.text = lookingTitle
+        }
+        if (locationTitle != null){
+        binding.locationButton.text = locationTitle
+        }
+
         binding.settingsButton.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-        
+
+        binding.lookingButton.setOnClickListener {
+            val intent = Intent(this, PreferenceActivity::class.java)
+            intent.putExtra("id",1)
+            intent.putExtra("title",binding.lookingButton.text.toString())
+            startActivity(intent)
+        }
+        binding.locationButton.setOnClickListener {
+            val intent = Intent(this, PreferenceActivity::class.java)
+            intent.putExtra("id",2)
+            intent.putExtra("title",binding.locationButton.text.toString())
+            startActivity(intent)
+        }
     }
 }
